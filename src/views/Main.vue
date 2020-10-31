@@ -1,14 +1,21 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
+  <div class="home container">
+    <div id="menu-bar">
+      <AppBar />
+    </div>
+    <div>
+      <Intro />
+    </div>
+    <div id="views"></div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
+import AppBar from "@/components/shared/AppBar.vue";
+import Intro from "@/components/home/Intro.vue";
 export default {
   name: "Home",
-  components: {},
+  components: { AppBar, Intro },
 };
 </script>
+<style></style>
